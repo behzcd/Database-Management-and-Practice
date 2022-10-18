@@ -1,1 +1,1 @@
-Here I uploaded my weekly activities from the class - Database Management and Practice
+Here I am uploading my weekly activities and assignments from Database Management and Practice class.
