@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="D:/My courses/Database-Management-and-Practice/Group project/my_db.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="125"/><column_width id="3" width="1608"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,7:mainstudent"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1">SELECT grade,
+CASE
+    WHEN grade &gt;= 3.75 THEN &quot;A&quot;
+    WHEN grade &gt;= 3.00 AND grade &lt; 3.75 THEN &quot;B&quot;
+    WHEN grade &gt;= 2.00 AND grade &lt; 3.00 THEN &quot;C&quot;
+    WHEN grade &gt;= 1.5 AND grade &lt; 2.00 THEN &quot;D&quot;
+    ELSE &quot;F&quot;
+END AS gpa,
+COUNT(id)
+FROM student
+		GROUP BY gpa;</sql><current_tab id="0"/></tab_sql></sqlb_project>
